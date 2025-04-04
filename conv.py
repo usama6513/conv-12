@@ -82,11 +82,14 @@ def check_password_strength(password):
         st.error("❌ Weak Password - follow the suggestions above.")
 
      # Get feedback
-    if feedback:
-     with st.expander("improve your password:"):
-         for item in feedback:
-            st.write(item)
-    password = st.text_input("Enter your password",type= "password",help="check your password strong 🔐")
+     if feedback:
+         with st.expander("improve your password:"):
+             for item in feedback:
+                 st.write(item)
+ password = st.text_input("Enter your password",type= "password",help="check your password strong 🔐")
+
+# Button working
+if st.button("Check strength"):
     if password:
         check_password_strength(password)
     else:
