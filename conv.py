@@ -33,6 +33,16 @@ import streamlit as st
 st.set_page_config(page_title=" Project 02: Password Strength Meter")
 st.title("🔐 Password Strength Meter")
 st.write("Enter your password check your security level:🔑")
+#custom css
+st.markdown("""
+<style>
+   .main {text-align: center;}
+   .stTextinput {width: 60% !important; margin: auto; }
+   .stButton button { width: 50%; background-color: blue; color: white; font-size: 18px; }
+   .stButton button: hover { background-color: red; color: white; }
+   </style>
+""", unsafe_allow_ html=True
+    
 
 
 #function
